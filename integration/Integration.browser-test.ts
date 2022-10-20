@@ -3,8 +3,11 @@
 
 
 describe('App', () => {
-  let browser
-  let page
+  // for local tests
+  // let browser
+  // let page
+
+
   beforeAll(async () => {
     // for local tests
     // browser = await puppeteer.launch({
