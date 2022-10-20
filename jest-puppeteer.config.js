@@ -3,10 +3,14 @@ module.exports = {
   launch: {
     dumpio: true,
     headless: true, //process.env.HEADLESS !== 'false',
-    executablePath: '/opt/homebrew/bin/chromium',
-    ignoreDefaultArgs: ['--disable-extensions'], 
-    args: ['--no-sandbox', "--disabled-setupid-sandbox", '--disable-gpu']
+    // mac os 
+    // executablePath: '/opt/homebrew/bin/chromium',
+    // ignoreDefaultArgs: ['--disable-extensions'], 
+    // args: ['--no-sandbox', "--disabled-setupid-sandbox", '--disable-gpu']
   },
+  // comment if mac os
+  browser: 'chromium',
+  browserContext: 'default',
   // browser: 'chromium',
   // browserContext: 'default',
   server: {
