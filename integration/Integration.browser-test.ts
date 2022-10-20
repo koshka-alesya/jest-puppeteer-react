@@ -21,17 +21,14 @@ describe('App', () => {
 
   it('should display a react logo', async () => {
     await expect(page).toMatch('React')
-    return true
   })
 
   it('should match a button with a "Learn React" text inside', async () => {
     await expect(page).toMatchElement('.App-link', { text: 'Learn React' })
-    return true
   })
 
   afterAll(async () => {
     await page.close();
     await browser.close();
-    return true;
   });
 })
