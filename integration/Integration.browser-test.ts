@@ -27,8 +27,8 @@ describe('App', () => {
     await expect(page).toMatchElement('.App-link', { text: 'Learn React' })
   })
 
-  afterAll(async () => {
-    await page.close();
-    await browser.close();
-  });
+  // afterAll(async () => {
+  //   await page.close();
+  //   await browser.close();
+  // });
 })
