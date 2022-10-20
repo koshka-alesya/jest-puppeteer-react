@@ -17,7 +17,7 @@ describe('App', () => {
 
     await page.goto('http://localhost:3000')
   
-  })
+  }, 30000)
 
   it('should display a react logo', async () => {
     await expect(page).toMatch('React')
@@ -27,8 +27,8 @@ describe('App', () => {
     await expect(page).toMatchElement('.App-link', { text: 'Learn React' })
   })
 
-  afterAll(async () => {
-    await page.close();
-    await browser.close();
-  });
+  // afterAll(async () => {
+  //   await page.close();
+  //   await browser.close();
+  // });
 })
