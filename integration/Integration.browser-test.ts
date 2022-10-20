@@ -5,7 +5,7 @@ describe('App', () => {
   })
  
   it('should display a react logo', async () => {
-    await expect(page).toMatch('MMDjbeek')
+    await expect(page).toMatch('React')
   })
 
   it('should match a button with a "Learn React" text inside', async () => {
