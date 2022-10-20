@@ -5,8 +5,8 @@ module.exports = {
     headless: true, //process.env.HEADLESS !== 'false',
     // mac os 
     // executablePath: '/opt/homebrew/bin/chromium',
-    // ignoreDefaultArgs: ['--disable-extensions'], 
-    // args: ['--no-sandbox', "--disabled-setupid-sandbox", '--disable-gpu']
+    ignoreDefaultArgs: ['--disable-extensions'], 
+    args: ['--no-sandbox', "--disabled-setupid-sandbox", '--disable-gpu']
   },
   // comment if mac os
   browser: 'chromium',

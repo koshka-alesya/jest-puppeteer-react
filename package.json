@@ -31,9 +31,7 @@
   },
   "eslintConfig": {
     "extends": "react-app",
-    "env": {
-      "jest": true
-    }, 
+    "env": "jest",
     "globals": {
       "page": true
     }
