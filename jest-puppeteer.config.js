@@ -2,7 +2,7 @@ console.log('hello')
 module.exports = {
   launch: {
     dumpio: true,
-    headless: true, //process.env.HEADLESS !== 'false',
+    headless: false, //process.env.HEADLESS !== 'false',
     ignoreDefaultArgs: ['--disable-extensions'], 
     args: ['--no-sandbox', "--disabled-setupid-sandbox", '--disable-gpu']
   },
